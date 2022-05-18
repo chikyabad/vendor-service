@@ -1,0 +1,16 @@
+GET http://localhost:4004/vendors-service/Vendors
+###
+GET http://localhost:4004/vendors-service/Products
+###
+POST http://localhost:4004/vendors-service/Vendors
+Content-Type: application/json
+
+{
+  "id" : 5,
+  "name" : "Audi",
+  "country" : "DEU",
+  "postalCode": "CKL 456",
+  "currency": "EUR"
+}
+###
+DELETE http://localhost:4004/vendors-service/Vendors/2
